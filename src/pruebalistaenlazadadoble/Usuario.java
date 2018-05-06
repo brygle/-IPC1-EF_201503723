@@ -10,6 +10,7 @@ package pruebalistaenlazadadoble;
  * @author Bryan
  */
 public class Usuario {
+
     Usuario anterior;
     Usuario siguiente;
     int id;
@@ -19,42 +20,37 @@ public class Usuario {
         this.id = id;
         this.nombre = nombre;
         anterior = null;
-        siguiente =null;
+        siguiente = null;
     }
 
-    public Usuario getAnterior() {
+    //devuelve el usuario anterior a el en la lista
+    public Usuario obtenerAnterior() {
         return anterior;
     }
-
-    public void setAnterior(Usuario anterior) {
+    //crea el enlace anterior
+    public void enlazarAnterior(Usuario anterior) {
         this.anterior = anterior;
     }
-
-    public Usuario getSiguiente() {
+    
+    //devuelve el usuario siguiente a el en la lista
+    public Usuario obtenerSiguiente() {
         return siguiente;
     }
-
-    public void setSiguiente(Usuario siguiente) {
+    //crea el enlace siguiente
+    public void enlazarSiguiente(Usuario siguiente) {
         this.siguiente = siguiente;
     }
-
-    public int getId() {
+    //obtener el id
+    public int getID() {
         return id;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    //obtener el nombre
     public String getNombre() {
         return nombre;
     }
-
+    //establecer el nombre
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    
-    
-    
+
 }
