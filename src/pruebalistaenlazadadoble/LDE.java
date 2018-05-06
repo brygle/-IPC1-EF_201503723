@@ -24,6 +24,7 @@ public class LDE {
         return size;
     }
 
+    //insertar usuarios al inicio de la lista
     public void insertarInicio(Usuario nuevo) {
         if (size == 0) {
             inicio = nuevo;
@@ -52,6 +53,7 @@ public class LDE {
         }
     }
 
+    //insertar usuarios al final de la lista
     public void insertarFinal(Usuario nuevo) {
         if (size == 0) {
             inicio = nuevo;
@@ -79,7 +81,7 @@ public class LDE {
             }
         }
     }
-    
+    //imprime en consola todos los elementos
     public void mostrarElementos(){
         Usuario temporal = inicio;
         for(int i = 0 ; i<size; i++){
@@ -89,7 +91,7 @@ public class LDE {
             System.out.println("ID: " + temporal.getID() + "\tNombre: " + temporal.getNombre());
         }
     }
-    
+    //busca un usuario por id y lo modifica
     public void buscarYModificar(int id, String nombre){
         Usuario temporal = inicio;
         int i = 0;
@@ -104,10 +106,11 @@ public class LDE {
         }
     }
     
+    //muestra el ultimo elemento de la lista
     public void mostrarUltimo() {
         System.out.println("ID: " + fin.getID() + "\tNombre: " + fin.getNombre());
     }
-
+    //busca un usuario por id y lo elimina
     public void buscarYEliminar(int id) {
         Usuario temporal = inicio;
         boolean bandera = false;
